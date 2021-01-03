@@ -1,0 +1,84 @@
+@import '../../styles/colors.css';
+@import '../../styles/typography.css';
+
+.root {
+  color: var(--color-text-primary-main);
+  font-family: 'Manrope', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+/* Primary label */
+.variant-label-primary {
+  font-weight: var(--text-weight-medium);
+  font-size: var(--text-size-body);
+  line-height: var(--text-line-height-subtitle);
+  text-transform: uppercase;
+  letter-spacing: 0.17px;
+}
+/* Label */
+.variant-label {
+  font-weight: var(--text-weight-medium);
+  font-size: var(--text-size-label);
+  line-height: var(--text-line-height-body);
+  text-transform: uppercase;
+  letter-spacing: 0.17px;
+}
+/* Label small */
+.variant-label-small {
+  font-weight: var(--text-weight-regular);
+  font-size: var(--text-size-label);
+  line-height: var(--text-line-height-body);
+}
+
+/* Subtitle */
+.variant-subtitle {
+  font-weight: var(--text-weight-medium);
+  font-size: var(--text-size-subtitle);
+  line-height: var(--text-line-height-subtitle);
+}
+
+/* Primary body */
+.variant-primary-body {
+  font-weight: var(--text-weight-regular);
+  font-size: var(--text-size-body);
+  line-height: var(--text-line-height-body);
+}
+/* Primary body semibold */
+.variant-body-semibold {
+  font-weight: var(--text-weight-medium);
+  font-size: var(--text-size-body);
+  line-height: var(--text-line-height-subtitle);
+}
+
+/* Headline; Title */
+.variant-title {
+  font-weight: var(--text-weight-bold);
+  font-size: var(--text-size-title);
+  line-height: var(--text-line-height-title);
+}
+
+/* Colors */
+.color-white { color: var(--color-white) !important; }
+.color-text-secondary { color: var(--color-text-secondary-main) !important; }
+.color-btn-disabled { color: var(--color-background-default) !important; }
+
+/* Weight */
+.weight-extra-light { font-weight: var(--text-weight-extra-light) !important; }
+.weight-light { font-weight: var(--text-weight-light) !important; }
+.weight-regular { font-weight: var(--text-weight-regular) !important; }
+.weight-medium { font-weight: var(--text-weight-medium) !important; }
+.weight-semibold { font-weight: var(--text-weight-semibold) !important; }
+.weight-bold { font-weight: var(--text-weight-bold) !important; }
+.weight-extra-bold { font-weight: var(--text-weight-extra-bold) !important; }
+
+/* TRUNCATE */
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

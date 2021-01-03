@@ -1,0 +1,64 @@
+:root {
+  /* COMMON */
+  --color-black: hsl(0, 0%, 0%);
+  --color-white: hsl(0, 0%, 100%);
+
+  /* BACKGROUND */
+  --color-background-hue: 206;
+  --color-background-saturate: 25%;
+  --color-background-default: hsl(var(--color-background-hue), var(--color-background-saturate), 88%);
+  --color-background-default20: hsl(var(--color-background-hue), var(--color-background-saturate), 99%);
+  --color-background-default40: hsl(var(--color-background-hue), var(--color-background-saturate), 95%);
+  --color-background-default80: hsl(var(--color-background-hue), var(--color-background-saturate), 91%);
+  --color-background-secondary: hsl(0, 0%, 90%);
+
+  /* PRIMARY */
+  --color-primary-hue: 160;
+  --color-primary-saturate: 51%;
+  --color-primary-main: hsl(var(--color-primary-hue), var(--color-primary-saturate), 57%);
+  --color-primary-main20: hsl(var(--color-primary-hue), var(--color-primary-saturate), 91%);
+  --color-primary-main40: hsl(var(--color-primary-hue), var(--color-primary-saturate), 83%);
+  --color-primary-main80: hsl(var(--color-primary-hue), var(--color-primary-saturate), 66%);
+  --color-primary-dark: hsl(var(--color-primary-hue), var(--color-primary-saturate), 48%);
+
+  /* SECONDARY */
+  --color-secondary-hue: 205;
+  --color-secondary-saturate: 76%;
+  --color-secondary-main: hsl(var(--color-secondary-hue), var(--color-secondary-saturate), 62%);
+  --color-secondary-main20: hsl(var(--color-secondary-hue), var(--color-secondary-saturate), 92%);
+  --color-secondary-main25: hsl(var(--color-secondary-hue), var(--color-secondary-saturate), 90%);
+  --color-secondary-main30: hsl(var(--color-secondary-hue), var(--color-secondary-saturate), 88%);
+  --color-secondary-main80: hsl(var(--color-secondary-hue), var(--color-secondary-saturate), 69%);
+
+  /* ERROR */
+  --color-error-hue: 344;
+  --color-error-saturate: 85%;
+  --color-error-main: hsl(var(--color-error-hue), var(--color-error-saturate), 71%);
+  --color-error-main20: hsl(var(--color-error-hue), var(--color-error-saturate), 94%);
+  --color-error-main80: hsl(var(--color-error-hue), var(--color-error-saturate), 77%);
+
+  /* APPROVAL */
+  --color-approval-hue: 36;
+  --color-approval-saturate: 100%;
+  --color-approval-main: hsl(var(--color-approval-hue), var(--color-approval-saturate), 54%);
+  --color-approval-main20: hsl(var(--color-approval-hue), var(--color-approval-saturate), 91%);
+  --color-approval-main25: hsl(var(--color-approval-hue), var(--color-approval-saturate), 88%);
+  --color-approval-main30: hsl(var(--color-approval-hue), var(--color-approval-saturate), 86%);
+  --color-approval-main40: hsl(var(--color-approval-hue), var(--color-approval-saturate), 82%);
+  --color-approval-main60: hsl(var(--color-approval-hue), var(--color-approval-saturate), 72%);
+  --color-approval-main80: hsl(var(--color-approval-hue), var(--color-approval-saturate), 63%);
+
+  /* ICONS */
+  --color-icons-main: hsl(var(--color-background-hue), 23%, 88%);
+  --color-icons-active: hsl(calc(var(--color-background-hue) + 8), 6%, 55%);
+  --color-icons-hover: hsl(calc(var(--color-background-hue) + 6), 6%, 59%);
+
+  /* CONTROLS */
+  --color-controls-main: hsl(var(--color-background-hue), 23%, 88%);
+  --color-controls-disable-bg: hsl(0, 0%, 98%);
+
+  /* SHADOW */
+  --color-shadow-main: hsla(var(--color-background-hue), 23%, 88%, 0.5);
+  --color-shadow-card: hsla(0, 0%, 0%, 0.05);
+  --color-shadow-button-main: hsla(var(--color-primary-hue), 51%, 57%, 0.3);
+}

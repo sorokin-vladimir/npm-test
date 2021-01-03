@@ -1,0 +1,6 @@
+:root {
+  --shadow-default: 0px 4px 20px var(--color-shadow-main);
+	--shadow-invalid: 0px 0px var(--space-1) var(--color-error-main);
+	--shadow-highlighted: 0px 0px var(--space-1) var(--color-approval-main);
+	--shadow-card: 0px 2px 3px var(--color-shadow-card);
+}

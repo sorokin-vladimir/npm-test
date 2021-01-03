@@ -1,0 +1,72 @@
+@import '../../styles/colors.css';
+@import '../../styles/spaces.css';
+
+.root {
+  border-radius: var(--space-0_5);
+  border: none;
+  min-width: var(--space-6);
+  padding: var(--space-0_5) var(--space-1);
+  cursor: pointer;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  white-space: nowrap;
+  box-sizing: border-box;
+  user-select: none;
+}
+.root:focus {
+  outline: none;
+}
+
+.type-primary {
+  background-color: var(--color-primary-main);
+  box-shadow: 0px var(--space-0_125) var(--space-0_5) var(--color-shadow-button-main);
+}
+.type-primary:hover {
+  background-color: var(--color-primary-dark);
+}
+.type-primary:active {
+  box-shadow: none;
+}
+.disabled-primary {
+  background-color: var(--color-text-secondary-main);
+  box-shadow: none;
+  cursor: default;
+}
+.disabled-primary:hover {
+  background-color: var(--color-text-secondary-main);
+}
+
+.type-secondary {
+  background-color: var(--color-white);
+}
+.type-secondary:hover {
+  background-color: var(--color-background-default40);
+}
+.type-secondary:active {
+  background-color: var(--color-background-default80);
+}
+.disabled-secondary {
+  background-color: var(--color-white);
+  cursor: default;
+}
+.disabled-secondary:hover {
+  background-color: var(--color-white);
+}
+.disabled-secondary:active {
+  background-color: var(--color-white);
+}
+
+.iconCentred {
+  display: flex;
+  justify-content: center;
+}
+.iconSpace {
+  margin-right: var(--space-1);
+}
+.iconButton {
+  padding: 0;
+  min-width: calc(var(--space-3) + var(--space-0_5));
+  height: var(--space-3);
+}

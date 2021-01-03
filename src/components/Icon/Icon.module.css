@@ -1,0 +1,67 @@
+@import '../../styles/colors.css';
+@import '../../styles/typography.css';
+@import '../../styles/spaces.css';
+
+.root {
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  width: var(--space-1_5);
+  height: var(--space-1_5);
+  box-sizing: border-box;
+}
+.root > path {
+  stroke: none;
+}
+
+/* SIZES */
+.size-xs {
+  width: var(--space-1);
+  height: var(--space-1);
+}
+.size-s {
+  width: var(--space-1_5);
+  height: var(--space-1_5);
+}
+.size-m {
+  width: var(--space-2);
+  height: var(--space-2);
+}
+.size-l {
+  width: var(--space-3);
+  height: var(--space-3);
+}
+.size-xl {
+  width: var(--space-4);
+  height: var(--space-4);
+}
+
+/* COLORS */
+.color-white > path {
+  fill: var(--color-white);
+}
+.color-lightgrey > path {
+  fill: var(--color-background-default);
+}
+.color-grey > path {
+  fill: var(--color-text-secondary-main);
+}
+.color-black > path {
+  fill: var(--color-text-primary-main);
+}
+.color-green > path {
+  fill: var(--color-primary-main);
+}
+
+/* ROTATE */
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.rotate {
+  animation: rotating 1s linear infinite;
+}

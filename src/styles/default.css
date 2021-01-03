@@ -1,0 +1,5 @@
+:root {
+  --default-font-size: 12;
+  font-size: calc(var(--default-font-size, 12px) * 1px);
+  box-sizing: border-box;
+}

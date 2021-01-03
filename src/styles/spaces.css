@@ -1,0 +1,15 @@
+@import './default.css';
+
+:root {
+  --space-0_125: calc(1 / var(--default-font-size) * 1rem);  /* 1px */
+  --space-0_25: calc(2 / var(--default-font-size) * 1rem);  /* 2px */
+  --space-0_5: calc(4 / var(--default-font-size) * 1rem);  /* 4px */
+  --space-0_75: calc(6 / var(--default-font-size) * 1rem);  /* 6px */
+  --space-1: calc(8 / var(--default-font-size) * 1rem);  /* 8px  DEFAULT */
+  --space-1_5: calc(12 / var(--default-font-size) * 1rem);  /* 12px */
+  --space-2: calc(16 / var(--default-font-size) * 1rem);  /* 16px */
+  --space-3: calc(24 / var(--default-font-size) * 1rem);  /* 24px */
+  --space-4: calc(32 / var(--default-font-size) * 1rem);  /* 32px */
+  --space-5: calc(40 / var(--default-font-size) * 1rem);  /* 40px */
+  --space-6: calc(48 / var(--default-font-size) * 1rem);  /* 48px */
+}

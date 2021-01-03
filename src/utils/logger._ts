@@ -1,0 +1,53 @@
+/**
+ * TODO: придумать, как можно просто и удобно использовать группировку логов
+ */
+
+import { isDev } from '../config';
+
+const levels: Record<string, string> = {
+  log: 'log',
+  warn: 'warn',
+  error: 'error',
+  trace: 'trace',
+  info: 'info',
+};
+
+const styles: Record<string, string> = {
+  log: 'color: lightsteelblue',
+  warn: 'color: orange',
+  error: 'color: red',
+  trace: 'color: mediumorchid',
+  info: 'color: teal',
+};
+
+/**
+ * Вывод данных в консоль, только для окружения **develop**
+ * @param {Any} arguments данные для вывода в консоль
+ *    если первый аргумент найден в объекте `levels`,
+ *    он берется как значение для форматирования вывода и уровня логгирования
+ *    и удаляется из списка аргументов.
+ *    Иначе выводится весь список аргументов
+ */
+// eslint-disable-next-line
+const logger = (...args: (string | number)[]) => {
+  // if (CONF.NODE_ENV === 'development') {
+  if (isDev) {
+    let level = 'log';
+    let data = [];
+
+    if (args[0] in levels) {
+      level = levels[(args[0] as string)];
+      data = [...args].slice(1);
+    } else {
+      data = [...args];
+    }
+
+    if (!data.length) data.push('default string by LOGGER.', (new Date()).toString());
+
+    // eslint-disable-next-line no-console
+    console[level](`%cLOGGER_${level}:`, styles[level], ...data);
+  }
+}
+
+(window as (Window & typeof globalThis & typeof logger)).logger = logger;
+export { logger };

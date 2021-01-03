@@ -1,0 +1,66 @@
+@import '../../styles/colors.css';
+@import '../../styles/spaces.css';
+@import '../../styles/typography.css';
+
+.root {
+  background-color: var(--color-white);
+  box-sizing: border-box;
+  border-radius: var(--space-0_5);
+  border: var(--space-0_125) solid var(--color-background-default);
+  color: var(--color-text-primary-main);
+  font-family: 'Manrope', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  font-size: var(--text-size-body);
+  line-height: var(--space-2);
+  font-weight: var(--text-weight-regular);
+  padding: var(--space-0_5) var(--space-1);
+  margin: 0;
+  width: 100%;
+}
+.root:focus {
+  outline: none;
+  background-color: var(--color-background-default40);
+}
+.root::placeholder {
+  color: var(--color-text-secondary-main);
+}
+
+/* VALID / INVALID */
+.valid {
+  border: var(--space-0_125) solid var(--color-primary-main);
+}
+.invalid {
+  border: var(--space-0_125) solid var(--color-error-main);
+}
+
+.truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* READ ONLY */
+.read-only {
+  background-color: var(--color-background-default20);
+  cursor: default;
+}
+.read-only:focus {
+  background-color: var(--color-background-default20);
+}
+.read-only::placeholder {
+  background-color: var(--color-background-default20);
+}
+
+/* DISABLED */
+.disabled {
+  background-color: var(--color-background-default20);
+  color: var(--color-background-default);
+  cursor: not-allowed;
+}
+.disabled:focus {
+  background-color: var(--color-background-default20);
+}
+.disabled::placeholder {
+  color: var(--color-background-default);
+}

@@ -1,0 +1,40 @@
+.root {
+  --space-8: 5.333333333rem;
+  box-shadow: var(--shadow-default);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: var(--space-0_125);
+}
+
+/* SIZE */
+.size-s {
+  width: var(--space-4);
+  height: var(--space-4);
+}
+.size-m {
+  width: var(--space-6);
+  height: var(--space-6);
+}
+.size-l {
+  width: var(--space-8);
+  height: var(--space-8);
+}
+
+/* SHAPE */
+.shape-circle {
+  border-radius: 50%;
+}
+.shape-square {
+  border-radius: var(--space-0_5);
+}
+
+/* THEME */
+.theme-light {
+  border: var(--space-0_125) solid var(--color-background-default40);
+}
+.theme-dark {
+  border: var(--space-0_125) solid var(--color-background-default20);
+  background-color: var(--color-black);
+}
